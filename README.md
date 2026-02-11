@@ -39,48 +39,7 @@ A comprehensive web application for Tawazun Psychiatric Clinic, built with Larav
 - **JavaScript**: jQuery, Bootstrap JS
 - **Styling**: Custom CSS, Font Awesome icons
 
-## Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/TopTechSoftwareSolutions/Abhubakkar.git
-   cd abhubakkar
-   ```
-
-2. **Install PHP dependencies**
-   ```bash
-   composer install
-   ```
-
-3. **Install Node.js dependencies**
-   ```bash
-   npm install
-   ```
-
-4. **Environment Configuration**
-   ```bash
-   cp .env.example .env
-   php artisan key:generate
-   ```
-
-5. **Database Setup**
-   - Create a MySQL database
-   - Update `.env` file with database credentials
-   ```bash
-   php artisan migrate
-   php artisan db:seed
-   ```
-
-6. **Build Assets**
-   ```bash
-   npm run build
-   ```
-
-7. **Start the Application**
-   ```bash
-   php artisan serve
-   ```
-
+  
 ## Usage
 
 ### For New Patients
