@@ -1,0 +1,134 @@
+
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #343a40;
+            background-color: #f8f9fa;
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+        /* Calming color palette */
+        :root {
+            --primary-blue: #007bff;
+            --secondary-blue: #6c757d;
+            --light-blue: #e1f5fe;
+            --white: #ffffff;
+        }
+
+        /* Hero Banner */
+        #hero {
+            background-color: var(--light-blue);
+            padding: 225px 0;
+            
+            text-align: center;
+        }
+
+        /* About Section */
+        #about {
+            padding: 80px 0;
+        }
+
+        .doctor {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: var(--white);
+        }
+
+        .doctor img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        /* Testimonials */
+        #testimonials {
+            background-color: var(--light-blue);
+            padding: 80px 0;
+        }
+
+        .testimonial {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--white);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 80px 0;
+        }
+
+        /* Footer */
+        #footer {
+            background-color: var(--secondary-blue);
+            color: var(--white);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Button Styles */
+        .btn-primary {
+            background-color: var(--primary-blue);
+            border-color: var(--primary-blue);
+        }
+
+        .btn-primary:hover {
+            background-color: darken(var(--primary-blue), 10%);
+            border-color: darken(var(--primary-blue), 10%);
+        }
+
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Scroll Effects */
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: var(--primary-blue);
+            transition: width 0.3s ease-in-out;
+        }
+
+        .nav-link:hover::before {
+            width: 100%;
+        }
+
+        /* Mobile Styles (example - Bootstrap is already mobile-first) */
+        @media (max-width: 768px) {
+            #hero {
+                padding: 50px 0;
+            }
+
+            .doctor {
+                margin-bottom: 30px;
+            }
+        }
+    
